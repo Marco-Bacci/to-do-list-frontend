@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
