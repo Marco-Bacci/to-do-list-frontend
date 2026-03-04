@@ -29,11 +29,14 @@ async function loadTasks() {
       }
 
       const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "X";
+      deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
       deleteBtn.classList.add("btn", "btn-danger");
 
       // 🔹 DELETE
       deleteBtn.addEventListener("click", async () => {
+        const conferma = confirm("Vuoi davvero eliminare questa task?");
+        if (!conferma) return;
+
         try {
           await fetch(`${API_URL}/${task.id}`, {
             method: "DELETE",
