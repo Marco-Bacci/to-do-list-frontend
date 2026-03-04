@@ -7,10 +7,18 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: linear-gradient(to bottom right, rgb(127, 28, 194), rgb(38, 209, 209));
+}
+
+.list-container {
+  max-width: 600px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 5px 5px 20px;;
 }
 
 ul {
@@ -27,6 +35,9 @@ li {
   border: 1px solid black;
   border-radius: 8px;
   padding: 5px 10px;
+  background-color: rgba(122, 119, 119, 0.26);
+  box-shadow: 5px 5px 10px;
+  font-weight: 600;
 }
 
 .task-text {
